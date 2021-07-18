@@ -258,104 +258,44 @@ body{
 
 
 
-.wt-btn_sign {
-  /* position: absolute; */
-    font-size: 23px;
-  font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    letter-spacing: -.21px;
-    white-space: nowrap;
-    -webkit-transition: color .3s;
-    -o-transition: color .3s;
-    -moz-transition: color .3s;
-    transition: color .3s;
-    line-height: 20px;  
-    color: #292b2c;
-    background: #d1c7ba;
-    border: none;
-    height: 45px;
-    padding: 0 5px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+.main-container{
+  position: relative;
 }
 
-.wt-btn_sign:hover {
-    color: white;
-    background: #292b2c;
-    transition: ease-in-out .2s;
-    }
+.cta_btn{
+  position: absolute;
+  z-index: 5;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 
-.wt-btn_sign-bound {
-    display: block;
-    overflow: hidden;
+ 
 }
 
-.wt-btn_sign-bound span {
-    position: relative;
-    display: inline-block;
-  padding:0 22px ;
-        -webkit-animation: wt-btn_sign-marquee 2s linear infinite;
-        -moz-animation: wt-btn_sign-marquee 2s linear infinite;
-        -o-animation: wt-btn_sign-marquee 2s linear infinite;
-        animation: wt-btn_sign-marquee 2s linear infinite;
+.cta_btn button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  border: #fff 3px solid;
+  background: none !important;
+  cursor: pointer;
+  border-radius: 2em; 
+  font-size: 150%;
+  transition: background 300ms ease-in-out, transform 250ms ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-.wt-btn_sign-bound span:after {
-        content:attr(data-text);
-        position: absolute;
-        right: 100%;
-        padding: 0 23px;
-    }
-
-@-webkit-keyframes wt-btn_sign-marquee {
-    0% {
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0)
-    }
-
-    100% {
-        -webkit-transform: translate3d(-100%,0,0);
-        transform: translate3d(-100%,0,0)
-    }
+.cta_btn button:hover,
+.cta_btn button:focus{
+  background: #505355 !important;
+  border: none !important;
 }
 
-@-moz-keyframes wt-btn_sign-marquee {
-    0% {
-        -moz-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0)
-    }
-
-    100% {
-        -moz-transform: translate3d(-100%,0,0);
-        transform: translate3d(-100%,0,0)
-    }
+.cta_btn button:active {
+  transform: scale(0.9);
 }
-
-@-o-keyframes wt-btn_sign-marquee {
-    0% {
-        transform: translate3d(0,0,0)
-    }
-
-    100% {
-        transform: translate3d(-100%,0,0)
-    }
-}
-
-@keyframes wt-btn_sign-marquee {
-    0% {
-        -webkit-transform: translate3d(0,0,0);
-        -moz-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0)
-    }
-
-    100% {
-        -webkit-transform: translate3d(-100%,0,0);
-        -moz-transform: translate3d(-100%,0,0);
-        transform: translate3d(-100%,0,0)
-    }
-}
-
 /* .explore_button{
   position: relative;
 } */
